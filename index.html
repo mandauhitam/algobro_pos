@@ -1,16 +1,106 @@
+<!--UI Test
+Copyright @ Algobro 2021-->
+
 <!DOCTYPE html>
-<html>
+<html lang="EN">
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Page Title</title>
+    <title>KASIR</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
-    <script src='main.js'></script>
+    <link rel='stylesheet' type='text/css' media='screen' href='./css/main.css'>
 </head>
+
 <body>
-    <p>
-        Hello World
-    </p>
+    <!-- Navigasi Utama -->
+    <header>
+        <div class="head-pane">
+            <!-- Category Search Menu -->
+            <div class="view-btn">
+                <i class="fas fa-list-ul fa-1x"></i>
+            </div>
+            <div class="dropdown-container">
+                <span onClick="dropdownList()" class="dropdown-container__btn"><h2>All Menu <i class="fas fa-angle-down fa-1x"></i> </h2></span>
+                <span class="dropdown-container__ctn" id="myDropdown">
+                    <input type="text" id="myInput" placeholder="Search Category" onKeyup="filterFunction()">
+                    <a href="A001">Seafood</a> <!--Query Kategori Makanan-->
+                    <a href="A002">Gorengan</a> <!--Query Kategori Makanan-->
+                    <a href="A003">Minuman</a> <!--Query Kategori Makanan-->
+                    <a href="A004">Sayur</a> <!--Query Kategori Makanan-->
+                </span>
+            </div>
+
+            <!-- Global Search Menu -->
+            <input type="text" class="search-bar" placeholder="Search Menu" onKeyup="filterFunction" >
+            <div class="search-btn"><i class="fas fa-search"></i></div>
+        </div>
+    </header>
+    
+    <!-- Content Utama / Sidepane & Content -->
+    <main>
+    <div class="sdpn">
+        <div class="top-sdpn">
+            <div class="top-sdpn__customer-btn"><i class="fas fa-user-alt fa-2x"></i></div>
+            <h3 class="top-sdpn__date">Sunday, 26 Desember 2020</h3>
+            <h3 class="top-sdpn__time">16:00</h3>
+            <div class="top-sdpn__clr-btn"><i class="fas fa-times fa-2x"></i></div>
+        </div>
+        <!-- Content Sidepane -->
+        <div class="ctn-sdpn">
+            <!-- Content Sidepane Header -->
+            <span class="ctn-sdpn__cust">
+                <h3>Nama Customer</h3>
+                <input type="text" class="ctn-sdpn__cust__name">
+                <h3>Pesanan </h3>
+                <select name="" id="" class="ctn-sdpn__cust__order">
+                    <option value="0">Dine-In</option>
+                    <option value="1">Takeaway</option>
+                    <option value="2">Reservation</option>
+                </select>
+                <h3>Nomor Meja</h3>
+                <input type="text" class="ctn-sdpn__cust__meja">
+            </span>
+            <!-- Content Sidepane Main -->
+            <span class="ctn-sdpn__menu">
+                <span class="ctn-sdpn__menu__disc-tag"><i class="fas fa-tag fa-flip-horizontal"></i></span>
+                <span class="ctn-sdpn__menu__qty-tag">2</span>
+                <span class="ctn-sdpn__menu__order-tag">Babi Goreng</span>
+                <span class="ctn-sdpn__menu__price-tag">IDR 20,000</span>
+                <button class="ctn-sdpn__menu__minus-sign"><i class="fas fa-minus"></i></button>
+                <input type="text" class="ctn-sdpn__menu__qty-fill">
+                <button class="ctn-sdpn__menu__plus-sign"><i class="fas fa-plus"></i></button>
+                <input type="text" class="ctn-sdpn__menu__note-fill">
+            </span>
+        </div>
+        <!-- Content Sidepane Button / Auto Sum from selection-->
+        <div class="btm-sdpn">
+            <button type="submit" class="btm-sidepane__btn">PROCEED <i class="">IDR 20,000</i></button>
+        </div>
+    </div>
+    </main>
+
+    <!-- Content Main for Main Pane -->
+    <div class="mnpn">
+        <!-- Display menu from database -->
+        <button type="submit">
+        <img src="" alt="">
+        <i class="fas fa-utensils"></i>
+        <span class="mnpn__blockname">Sayur Jengkol</span>
+        </button>
+    </div>
+
+    <footer>
+        <nav>
+            <ul class="menu-nav">
+                <li class="menu-nav__item"><a href="" class="menu-nav__link active"><i class="fas fa-shopping-basket fa-3x"></i></a></li>
+                <li class="menu-nav__item"><a href="" class="menu-nav__link"><i class="fas fa-clipboard-check fa-3x"></i></i></a></li>
+                <li class="menu-nav__item"><a href="" class="menu-nav__link"><i class="fas fa-home fa-3x"></i></a></li>
+                <li class="menu-nav__item"><a href="" class="menu-nav__link"><i class="fas fa-tools fa-3x"></i></a></li>
+                <li class="menu-nav__item"><a href="" class="menu-nav__link"><i class="fas fa-cash-register fa-3x"></i></a></li>
+            </ul>
+        </nav>
+    </footer>
 </body>
+<script src="https://kit.fontawesome.com/bc1d00943b.js" crossorigin="anonymous"></script>
+<script src='./js/main.js'></script>
 </html>
