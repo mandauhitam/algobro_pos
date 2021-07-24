@@ -1,4 +1,4 @@
-$primary-color: #3a3a3a;
+$primary-color: #FFFFFF;
 $secondary-color: #ffbb00;
 $button-color: rgb(226, 226, 226);
 $hover-color: rgb(212, 211, 211);
@@ -10,13 +10,3 @@ $text-color: (
 );
 $default-radius: 25px;
 $tanda: 2px dotted black;
-
-
-
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    text-decoration: none;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}

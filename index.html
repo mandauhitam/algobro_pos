@@ -8,46 +8,47 @@ Copyright @ Algobro 2021-->
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Algobro</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='./css/main.css'>
-    <link rel="stylesheet" href="./asset/fontawesome-free-5.15.3-web/css/all.css" class="favicon">
+    <link rel="stylesheet" href="scss/main.css">
+    <link rel="stylesheet" href="asset/font-awesome-4.7.0/css/font-awesome.min.css">
+    <script src="main.js"></script>
 </head>
 
 <body>
+    <header>
     <nav>
-        <ul class="nav-menu">
-            <li class="item logo"><p>Resto Joglo</p></li>
-            <li class="item date-time">
-                <p class="day">Thursday</p>
-                <p class="date">01 April 2021</p>
-                <p class="time">16:00</p>
-            </li>
-            <li class="item link-button">List Order</li>
-            <li class="item link-button">Kitchen</li>
-            <li class="item status-bar">
-                <i class="far fa-sticky-note"></i>
-                <i class="fas fa-sync"></i>
-                <i class="fas fa-wifi"></i>
-                <i class="fas fa-power-off"></i>
-            </li>
+        <ul>
+            <li> Home</li>
+            <li> Logout</li>
         </ul>
     </nav>
-
-    <main class="content">
-        <div class="grid grid-container">
-            <div class="item grid-1"><h4>Settings</h4></div>
-            <div class="item grid-2"><i class="fas fa-binoculars fa-4x"><h4>Overview</h4></i></div>
-            <div class="item grid-3"><i class="fas fa-chart-pie fa-4x"><h4>Report</h4></i></div>
-            <div class="item grid-4"><i class="fas fa-mortar-pestle fa-4x"><h4>Item List</h4></i></div>
-            <div class="item grid-5"><i class="fas fa-warehouse fa-4x"><h4>Stock</h4></i></div>
-            <div class="item grid-6"><i class="fas fa-book-open fa-4x"><h4>Reservasi</h4></i></div>
-            <div class="item grid-7"><i class="fas fa-cash-register fa-4x"><h4>Cashier</h4></i></div>
-            <div class="item grid-8"><i class="fas fa-print fa-4x"><h4>Printer</h4></i></div>
-            <div class="item grid-9"><i class="fas fa-users fa-4x"><h4>User Management</h4></i></div>
-            <div class="item grid-10"><i class="fas fa-database fa-4x"><h4>Master Data</h4></i></div>
-            <div class="item grid-11"><i class="fas fa-percentage fa-4x"><h4>Discount & Tax</h4></i></div>
-            <div class="item grid-12"><i class="fas fa-drum-steelpan fa-4x"><h4>Kitchen</h4></i></div>
+    </header>
+    <div class="sidebar">
+        <div class="sidebar-head">
+            <div class="sidebar-head-left">
+                Home
+            </div>
+            <div class="sidebar-head-mid">
+                Ohara
+            </div>
+            <div class="sidebar-head-right">
+                Dodo
+            </div>
         </div>
-    </main>
+        <div class="sidebar-body">
+            Body
+        </div>
+        <div class="sidebar-foot">
+            Foot
+        </div>
+    </div>
+    <div class="main">
+        <div class="page">
+            <div class="hamburger">
+                <i class="fa fa-bars"></i>
+            </div>
+            <div class="content"></div>
+        </div>
+    </div>
 </body>
 <script src='./js/main.js'></script>
 </html>
